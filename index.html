@@ -84,34 +84,126 @@
   </div>
 </section>
 
-  <!-- HANGARS & OPTIONAL HOMES -->
-  <section id="hangars" class="py-16 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold">Hangars & Optional Homes</h2>
-      <p class="mt-3 text-slate-600 max-w-3xl">
-        Air-side: a single row of private 15×20 m hangars fronts the apron. A 30×20 m Maintenance hangar and a 30×20 m Common hangar are reserved for later phases.
-        Land-side: if requested, buyers can add a home in the residential cluster—eight houses (8×7 m) positioned just north of the hotel, between the hotel block and the yard/pool.
+<!-- HANGARS & OPTIONAL HOMES (full-bleed text + vector diagrams) -->
+<section id="hangars" class="py-16 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-semibold">Hangars & Optional Homes</h2>
+
+    <!-- full-bleed, justified text -->
+    <div class="-mx-4 md:-mx-8 lg:-mx-16 xl:-mx-24 2xl:-mx-40 mt-3">
+      <p class="px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-40 text-slate-600 [text-align:justify]">
+        Air-side: a single row of private <strong>15×20 m</strong> hangars fronts the apron. A <strong>30×20 m Maintenance</strong> hangar and a
+        <strong>30×20 m Common</strong> hangar are reserved for later phases. Land-side: if requested, buyers can add a home in the residential
+        cluster—<strong>eight houses (8×7 m)</strong> positioned just north of the hotel, between the hotel block and the yard/pool.
       </p>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="card p-6 rounded-lg bg-white">
-          <h3 class="font-semibold">Private Hangar</h3>
-          <p class="text-sm text-slate-600">Standard module: <strong>15×20 m</strong>, doors facing the apron.</p>
-          <!-- Use available diagram to avoid 404 -->
-          <img src="/img/apron_plan_scaled.png" alt="Hangar module diagram (representative)" class="mt-4 rounded">
-        </div>
-        <div class="card p-6 rounded-lg bg-white">
-          <h3 class="font-semibold">Maintenance / Common</h3>
-          <p class="text-sm text-slate-600">Reserved shells: <strong>30×20 m</strong> each, to be built in later stages.</p>
-          <img src="/img/apron_plan_scaled.png" alt="Maintenance and common hangar (representative)" class="mt-4 rounded">
-        </div>
-        <div class="card p-6 rounded-lg bg-white">
-          <h3 class="font-semibold">Optional Home (land-side)</h3>
-          <p class="text-sm text-slate-600">Eight 8×7 m homes in the east block residential cluster.</p>
-          <img src="/img/landside_east_block_scaled.png" alt="Houses cluster" class="mt-4 rounded">
+    </div>
+
+    <!-- cards -->
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+
+      <!-- PRIVATE HANGAR (15×20 m) -->
+      <div class="card p-6 rounded-lg bg-white">
+        <h3 class="font-semibold">Private Hangar</h3>
+        <p class="text-sm text-slate-600">Standard module: <strong>15×20 m</strong>, doors facing the apron.</p>
+
+        <!-- Inline SVG diagram -->
+        <div class="mt-4 rounded border">
+          <svg viewBox="0 0 700 420" class="w-full h-auto">
+            <!-- apron strip -->
+            <rect x="20" y="320" width="660" height="60" fill="#e6eef7" />
+            <text x="350" y="357" text-anchor="middle" font-size="14" fill="#46698c">Apron (taxi/stand)</text>
+
+            <!-- hangar box -->
+            <rect x="170" y="140" width="360" height="170" rx="8" ry="8" fill="#f3f4f6" stroke="#94a3b8" stroke-width="2" />
+            <text x="350" y="190" text-anchor="middle" font-size="18" fill="#334155">Private Hangar</text>
+            <text x="350" y="214" text-anchor="middle" font-size="14" fill="#64748b">15 m × 20 m (clear span)</text>
+
+            <!-- big door facing apron -->
+            <rect x="200" y="300" width="300" height="16" fill="#cbd5e1" />
+            <text x="350" y="295" text-anchor="middle" font-size="12" fill="#475569">Hangar door(s) to apron</text>
+
+            <!-- service/people door -->
+            <rect x="484" y="170" width="12" height="26" fill="#94a3b8" />
+            <text x="515" y="185" font-size="11" fill="#475569">Access</text>
+
+            <!-- scale bar -->
+            <line x1="100" y1="380" x2="220" y2="380" stroke="#475569" stroke-width="3" />
+            <text x="160" y="400" text-anchor="middle" font-size="12" fill="#475569">≈ 20 m</text>
+          </svg>
         </div>
       </div>
+
+      <!-- MAINTENANCE / COMMON (30×20 m ) -->
+      <div class="card p-6 rounded-lg bg-white">
+        <h3 class="font-semibold">Maintenance / Common</h3>
+       <p class="text-sm text-slate-600">
+  Example of a reserved shell: <strong>30×20 m</strong>. Both Maintenance and Common hangars use the same design.
+</p>
+        <!-- Inline SVG diagram -->
+        <div class="mt-4 rounded border">
+          <svg viewBox="0 0 700 420" class="w-full h-auto">
+            <!-- apron strip -->
+            <rect x="20" y="320" width="660" height="60" fill="#e6eef7" />
+            <text x="350" y="357" text-anchor="middle" font-size="14" fill="#46698c">Apron (service access)</text>
+
+            <!-- two shells -->
+            <rect x="70"  y="140" width="250" height="170" rx="8" ry="8" fill="#fefce8" stroke="#f59e0b" stroke-width="2" />
+            <rect x="380" y="140" width="250" height="170" rx="8" ry="8" fill="#eef2ff" stroke="#6366f1" stroke-width="2" />
+
+            <text x="195" y="185" text-anchor="middle" font-size="16" fill="#92400e">Maintenance</text>
+            <text x="195" y="208" text-anchor="middle" font-size="13" fill="#92400e">30 × 20 m</text>
+
+            <text x="505" y="185" text-anchor="middle" font-size="16" fill="#3730a3">Common</text>
+            <text x="505" y="208" text-anchor="middle" font-size="13" fill="#3730a3">30 × 20 m</text>
+
+            <!-- wide doors -->
+            <rect x="95"  y="300" width="200" height="16" fill="#fde68a" />
+            <rect x="405" y="300" width="200" height="16" fill="#c7d2fe" />
+            <text x="195" y="295" text-anchor="middle" font-size="11" fill="#92400e">Wide doors to apron</text>
+            <text x="505" y="295" text-anchor="middle" font-size="11" fill="#3730a3">Wide doors to apron</text>
+
+            <!-- scale bar -->
+            <line x1="100" y1="380" x2="250" y2="380" stroke="#475569" stroke-width="3" />
+            <text x="175" y="400" text-anchor="middle" font-size="12" fill="#475569">≈ 30 m</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- OPTIONAL HOME (8×7 m) -->
+      <div class="card p-6 rounded-lg bg-white">
+        <h3 class="font-semibold">Optional Home (land-side)</h3>
+        <p class="text-sm text-slate-600">Example footprint: <strong>8×7 m</strong> single-family unit (local supplier concept).</p>
+
+        <!-- Inline SVG diagram (simple floor idea) -->
+        <div class="mt-4 rounded border">
+          <svg viewBox="0 0 700 420" class="w-full h-auto">
+            <!-- lot -->
+            <rect x="40" y="40" width="620" height="340" rx="10" ry="10" fill="#f8fafc" stroke="#94a3b8" />
+            <text x="350" y="65" text-anchor="middle" font-size="13" fill="#475569">Sample 8 × 7 m micro-home (not to scale)</text>
+
+            <!-- rooms -->
+            <rect x="200" y="110" width="300" height="180" fill="#e2e8f0" stroke="#64748b" />
+            <rect x="200" y="290" width="140" height="60" fill="#e5f4e8" stroke="#64748b" />
+            <rect x="360" y="290" width="140" height="60" fill="#fde2e2" stroke="#64748b" />
+
+            <text x="350" y="200" text-anchor="middle" font-size="15" fill="#334155">Living / Kitchen</text>
+            <text x="270" y="323" text-anchor="middle" font-size="13" fill="#166534">Bedroom</text>
+            <text x="430" y="323" text-anchor="middle" font-size="13" fill="#991b1b">Bath / Utility</text>
+
+            <!-- porch -->
+            <rect x="200" y="95" width="300" height="10" fill="#94a3b8" />
+            <text x="350" y="90" text-anchor="middle" font-size="11" fill="#475569">Porch / Entry</text>
+          </svg>
+        </div>
+
+        <p class="text-xs text-slate-500 mt-2">
+          Replace this with a supplier render when you pick a local partner; keep the footprint near 8 × 7 m to match the cluster plan.
+        </p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- APRON & OPS -->
   <section id="apron" class="py-16">
