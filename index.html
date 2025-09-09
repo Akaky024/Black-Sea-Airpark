@@ -115,34 +115,34 @@
     </div>
   </div>
 </section>
-<!-- APRON & OPS -->
+<!-- APRON & OPS (text above, image contained) -->
 <section id="apron" class="py-16">
-  <!-- Text stays in the normal page width -->
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-2xl md:text-3xl font-semibold">Apron & Airside Operations</h2>
+
     <p class="mt-3 text-slate-600 [text-align:justify]">
       The 50 m depth supports two parallel GA stand rows, a mid (longitudinal) taxiway and a south service taxiway, with a safety strip toward the runway.
       There is one mid-apron runway exit; runway holding points are planned at the east and west ends.
     </p>
-    <ul class="mt-6 space-y-2 text-slate-700 [text-align:justify]">
+
+    <ul class="mt-6 space-y-2 text-slate-700">
       <li>• 20 GA stands (T-marks), center-to-center spacing ≈ 12 m</li>
       <li>• Gaps between adjacent stands ≈ 4 m</li>
       <li>• Mid taxiway width ≈ 10.5 m (Code B); end taxiways (W & E) ≈ 10.5 m each</li>
       <li>• Remaining depth ≈ 12.5 m for edge margins / curves / misc.</li>
       <li>• Fuel station is on the air side adjacent to the hotel; its service road runs east–west along the south of the hotel building and enters the apron from there.</li>
     </ul>
-  </div>
 
-  <!-- Image breaks out to full-bleed (same pattern as other big images) -->
-  <div class="-mx-4 md:-mx-8 lg:-mx-16 xl:-mx-24 2xl:-mx-40 mt-8">
-    <div class="card rounded-none md:rounded-lg overflow-hidden">
+    <!-- Contained image (no negative margins, no grid columns) -->
+    <figure class="mt-8 card rounded-lg overflow-hidden">
       <img
+        id="apron-plan"
         src="/img/apron_plan_scaled.png"
         alt="Scaled apron plan with stands and taxiways"
-        class="block w-full h-auto"
+        class="block w-full h-auto max-w-full"
         loading="lazy"
-      >
-    </div>
+      />
+    </figure>
   </div>
 </section>
   <!-- HOTEL & LAND-SIDE -->
