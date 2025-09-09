@@ -196,24 +196,47 @@
       </div>
     </div>
   </section>
-  <!-- GALLERY (uses only the 3 images you have) -->
-  <section class="py-16">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold">Gallery-Georgia</h2>
-      <!-- Georgia landscapes  (uses only the 12 images you have) -->
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <img src="/img/georgia_landscape_5.jpg" class="rounded card" alt="Georgia landscape 5">
-        <img src="/img/georgia_landscape_6.jpg" class="rounded card" alt="Georgia landscape 6">
-        <img src="/img/georgia_landscape_7.jpg" class="rounded card" alt="Georgia landscape 7">
-        <img src="/img/georgia_landscape_8.jpg" class="rounded card" alt="Georgia landscape 8">
-        <img src="/img/georgia_landscape_9.jpg" class="rounded card" alt="Georgia landscape 9">
-        <img src="/img/georgia_landscape_10.jpg" class="rounded card" alt="Georgia landscape 10">
-        <img src="/img/georgia_landscape_11.jpg" class="rounded card" alt="Georgia landscape 11">
-        <img src="/img/georgia_landscape_12.jpg" class="rounded card" alt="Georgia landscape 12">
-        <img src="/img/georgia_landscape_13.jpg" class="rounded card" alt="Georgia landscape 13">
-      </div>
+ <!-- GALLERY -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-semibold">Gallery-Georgia</h2>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <img src="/img/georgia_landscape_5.jpg" class="rounded card cursor-pointer gallery-img" alt="Georgia landscape 5">
+      <img src="/img/georgia_landscape_6.jpg" class="rounded card cursor-pointer gallery-img" alt="Georgia landscape 6">
+      <img src="/img/georgia_landscape_7.jpg" class="rounded card cursor-pointer gallery-img" alt="Georgia landscape 7">
+      <img src="/img/georgia_landscape_8.jpg" class="rounded card cursor-pointer gallery-img" alt="Georgia landscape 8">
+      <img src="/img/georgia_landscape_9.jpg" class="rounded card cursor-pointer gallery-img" alt="Georgia landscape 9">
+      <img src="/img/georgia_landscape_10.jpg" class="rounded card cursor-pointer gallery-img" alt="Georgia landscape 10">
+      <img src="/img/georgia_landscape_11.jpg" class="rounded card cursor-pointer gallery-img" alt="Georgia landscape 11">
+      <img src="/img/georgia_landscape_12.jpg" class="rounded card cursor-pointer gallery-img" alt="Georgia landscape 12">
+      <img src="/img/georgia_landscape_13.jpg" class="rounded card cursor-pointer gallery-img" alt="Georgia landscape 13">
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-50">
+  <img id="lightbox-img" src="" class="max-h-[90%] max-w-[90%] rounded shadow-lg">
+</div>
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  document.querySelectorAll(".gallery-img").forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.remove("hidden");
+      lightbox.classList.add("flex");
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+    lightbox.classList.remove("flex");
+  });
+</script>
   <!-- LOCATION -->
   <section class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4">
