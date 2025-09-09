@@ -32,29 +32,34 @@
     </div>
   </header>
  <!-- HERO -->
-<section class="relative h-[500px] bg-cover bg-center" style="background-image: url('/img/your-hero-image.jpg')">
-  <div class="absolute inset-0 bg-black/30"></div> <!-- dark overlay -->
+<section class="relative h-[500px] bg-cover bg-center bg-no-repeat"
+         style="background-image:url('/img/hero.jpg')">
+  <div class="absolute inset-0 bg-black/30"></div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-4 flex flex-col justify-center h-full">
-    <h1 class="text-3xl md:text-5xl font-bold text-white">
-      A pilot-first private airpark on Georgia’s Black Sea
-    </h1>
-    <p class="mt-4 text-white text-lg max-w-2xl">
-      1000 m runway strip, ICAO-compliant apron with 20 GA stands, 15×20 m private hangars,
-      a boutique hotel with an ATC tower, and an optional residential cluster on the land side.
-    </p>
-    <div class="mt-6 flex flex-wrap gap-3">
-      <span class="px-4 py-2 rounded bg-white/20 text-white">Runway strip ~1000 × 100 m</span>
-      <span class="px-4 py-2 rounded bg-white/20 text-white">20 GA stands</span>
-      <span class="px-4 py-2 rounded bg-white/20 text-white">Private hangars 15×20 m</span>
-      <span class="px-4 py-2 rounded bg-white/20 text-white">Hotel + ATC tower</span>
+  <!-- This outer flex just centers vertically -->
+  <div class="relative z-10 h-full flex items-center">
+    <!-- UNIFIED CONTAINER: left edge will now match all sections -->
+    <div class="w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl md:text-5xl font-bold text-white tracking-tight">
+        A pilot-first private airpark on Georgia’s Black Sea
+      </h1>
+      <p class="mt-4 text-white text-lg max-w-2xl">
+        1000 m runway strip, ICAO-compliant apron with 20 GA stands, 15×20 m private hangars,
+        a boutique hotel with an ATC tower, and an optional residential cluster on the land side.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="px-4 py-2 rounded bg-white/20 text-white">Runway strip ~1000 × 100 m</span>
+        <span class="px-4 py-2 rounded bg-white/20 text-white">20 GA stands</span>
+        <span class="px-4 py-2 rounded bg-white/20 text-white">Private hangars 15×20 m</span>
+        <span class="px-4 py-2 rounded bg-white/20 text-white">Hotel + ATC tower</span>
+      </div>
     </div>
   </div>
 </section>
  <!-- MASTERPLAN -->
 <section id="plan" class="py-16">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-2xl md:text-3xl font-semibold">Masterplan Overview (12 ha)</h2>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"> 
+  <h2 class="text-2xl md:text-3xl font-semibold">Masterplan Overview (12 ha)</h2>
     <!-- justified text -->
     <p class="mt-3 text-slate-600 [text-align:justify]">
       The property totals 12 hectares. 10 ha is dedicated exclusively to the runway strip (grass in Phase 1).
@@ -82,7 +87,7 @@
 </section>
 <!-- HANGARS & OPTIONAL HOMES (full-bleed text + vector diagrams) -->
 <section id="hangars" class="py-16 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-4">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <h2 class="text-2xl md:text-3xl font-semibold">Hangars & Optional Homes</h2>
     <p class="mt-3 text-slate-600 [text-align:justify]">
       Air-side: a single row of private 15×20 m hangars fronts the apron.
@@ -118,7 +123,7 @@
 </section>
 <!-- APRON & OPS (text above, image contained) -->
 <section id="apron" class="py-16">
-  <div class="max-w-7xl mx-auto px-4">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <h2 class="text-2xl md:text-3xl font-semibold">Apron & Airside Operations</h2>
 
     <p class="mt-3 text-slate-600 [text-align:justify]">
@@ -148,7 +153,7 @@
 </section>
  <!-- HOTEL & LAND-SIDE (East Block) -->
 <section id="landside" class="py-16 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
     <!-- TEXT FIRST ON DESKTOP (order-1), IMAGE SECOND -->
     <div class="order-2 md:order-1">
       <h2 class="text-2xl md:text-3xl font-semibold">
@@ -188,7 +193,7 @@
 </section>
   <!-- 3D RENDERS (placeholders to replace later) -->
   <section id="renders" class="py-16">
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl md:text-3xl font-semibold">3D Renders (coming soon)</h2>
       <div class="mt-8 grid md:grid-cols-3 gap-6">
         <img src="/img/render_1.jpg" class="rounded card" alt="3D render 1 (placeholder)">
@@ -199,7 +204,7 @@
   </section>
  <!-- GALLERY -->
 <section class="py-16" id="gallery">
-  <div class="max-w-7xl mx-auto px-4">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <h2 class="text-2xl md:text-3xl font-semibold">Gallery-Georgia</h2>
 
     <!-- Uniform 16:9 tiles for a perfectly symmetric grid -->
@@ -350,7 +355,7 @@
 </script>
   <!-- LOCATION -->
   <section class="py-16 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl md:text-3xl font-semibold">Location</h2>
       <p class="mt-3 text-slate-600">Direct access to the public road on the east boundary; Black Sea & Caucasus landscapes nearby.</p>
       <div class="mt-6 card rounded overflow-hidden">
@@ -362,7 +367,7 @@
   </section>
   <!-- CONTACT -->
   <section id="contact" class="py-16">
-    <div class="max-w-3xl mx-auto px-4">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl md:text-3xl font-semibold">Request the full data room</h2>
       <p class="mt-3 text-slate-600">We’ll share CAD, high-res plans, and investment details.</p>
       <form name="lead" method="POST" data-netlify="true" class="mt-6 grid md:grid-cols-2 gap-4 card p-6 rounded">
