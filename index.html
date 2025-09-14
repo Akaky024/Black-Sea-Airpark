@@ -388,9 +388,33 @@
       <p class="text-sm text-slate-500 mt-3">Prefer Georgian? <a href="#" class="underline">ქართული ვერსია მალე</a></p>
     </div>
   </section>
-  <footer class="py-10 text-center text-sm text-slate-500 border-t">
-    © <span id="y"></span> Black Sea Airpark • Georgia
+    <footer class="py-10 border-t">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
+      <!-- Social row -->
+      <div class="flex items-center gap-4 text-slate-500">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/BlackSeaAirpark"  <!-- <-- https://www.facebook.com/profile.php?id=61580929434225 -->
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-slate-200 hover:border-slate-300 hover:text-slate-700"
+           aria-label="Black Sea Airpark on Facebook">
+          <!-- inline SVG icon so no external assets are needed -->
+          <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true">
+            <path d="M22.675 0h-21.35C.595 0 0 .595 0 1.326v21.348C0 23.405.595 24 1.326 24h11.495v-9.294H9.691V11.01h3.13V8.41c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.765v2.315h3.592l-.468 3.696h-3.124V24h6.116C23.405 24 24 23.405 24 22.674V1.326C24 .595 23.405 0 22.675 0z"/>
+          </svg>
+        </a>
+
+        <!-- (Optional) add more icons later: Instagram, WhatsApp, LinkedIn, etc. -->
+        <!-- Example placeholder:
+        <a href="https://instagram.com/your-handle" target="_blank" rel="noopener" class="inline-flex ...">…</a>
+        -->
+      </div>
+
+      <p class="text-center text-sm text-slate-500">
+        © <span id="y"></span> Black Sea Airpark • Georgia
+      </p>
+    </div>
   </footer>
+  
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
