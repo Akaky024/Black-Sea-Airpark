@@ -239,14 +239,20 @@
     </p>
 
     <div class="mt-8 card rounded-lg overflow-hidden">
-      <video
-        class="w-full h-auto"
-        controls
-        preload="metadata"
-        poster="/img/video_poster.jpg">
-        <source src="/video/black_sea_airpark_panorama.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+  <video
+  class="w-full h-auto"
+  controls
+  preload="metadata"
+  poster="/img/video_poster.jpg">
+  <!-- Mobile version -->
+  <source src="/video/flyover_720.mp4"
+          media="(max-width: 800px)"
+          type="video/mp4">
+  <!-- Desktop version -->
+  <source src="/video/flyover_1080.mp4"
+          type="video/mp4">
+  Your browser does not support the video tag.
+</video>
     </div>
   </div>
 </section>
